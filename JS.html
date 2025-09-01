@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+
+
+
+
+       // For loop use hota hai jab hume pata ho kitni dafa repeat karna hai
+       // Real world example: 1 se 10 tak numbers ka sum nikalna
+       var sum = 0;
+       var i =0;
+        for (i = 1; i <= 10; i++) {
+           sum += i; // har step pe sum me i add kar rahe hain
+        }
+        console.log("For loop ka result: 1 se 10 tak ka sum = " + sum);
+        // Output: 55
+
+
+        // While loop use hota hai jab hume nahi pata kitni dafa repeat karna hai
+        // Real world example: jab tak correct password enter na ho
+          var correctPassword = "1234";
+         var userInput = prompt("Password daalo:"); // user se input lena
+         while (userInput !== correctPassword) {
+             userInput = prompt("Galat hai! dobara try karo:");
+
+         }
+         console.log("While loop ka result: Password sahi enter hogaya!");
+
+         // Do while loop use hota hai jab code kam az kam ek dafa chalna hi chalna ho
+         // Real world example: ATM machine receipt print karna
+         var again = "yes";
+         do {
+             console.log("Receipt print ho rahi hai...");
+              // user se poochho dobara receipt chahiye ya nahi
+              again = prompt("Dobara receipt print karni hai? (yes/no)");
+            } while (again === "yes");
+            console.log("Do while loop ka result: Receipt process khatam!");
+
+        var dayNumber = parseInt(prompt("Week ka day number daalo (1-7):"));
+
+        switch (dayNumber) {
+            case 1:
+                console.log("Monday");
+                break; // break lagana zaroori hai warna niche ka code bhi chalega
+            case 2:
+                console.log("Tuesday");
+                break;
+            case 3:
+                console.log("Wednesday");
+                break;
+            case 4:
+                console.log("Thursday");
+                break;
+            case 5:
+                console.log("Friday");
+                break;
+            case 6:
+                console.log("Saturday");
+                break;
+            case 7:
+                console.log("Sunday");
+                break;
+            default:
+                console.log("Invalid day number (1 se 7 tak hi daalo)");
+        }
+
+    </script>
+</body>
+</html>
